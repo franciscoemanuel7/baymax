@@ -1,5 +1,5 @@
 if (!localStorage.getItem('nome')) {
-    window.location.href = 'slide1.html';
+    window.location.href = 'index.html';
 }
 
 
