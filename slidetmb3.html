@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BayMax</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+    :root {
+        background: linear-gradient(to right, rgb(0, 151, 178), rgb(126, 217, 87)) no-repeat;
+        background-size: cover;
+        height: 100%;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    #textoDigitado {
+        font-size: 18px;
+        padding: 20px;
+        overflow: auto;
+        white-space: pre-wrap;
+        animation: digitar 4s steps(40) forwards;
+    }
+
+    .bubble {
+        position: relative;
+        font-size: 18px;
+        line-height: 24px;
+        width: 550px;
+        background: #fff;
+        border-radius: 40px;
+        padding: 24px;
+        text-align: center;
+        color: #000;
+        margin-top: -220px;
+    }
+
+    .bubble-bottom-left:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 24px solid #fff;
+        border-right: 12px solid transparent;
+        border-top: 12px solid #fff;
+        border-bottom: 20px solid transparent;
+        left: 32px;
+        bottom: -24px;
+    }
+
+    #bay {
+        width: 400px;
+    }
+
+    #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    input[type="text"], input[type="number"] {
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        margin-right: 10px;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        display: inline-block;
+        /* nova propriedade */
+    }
+
+    button {
+        background-color: #0077cc;
+        border: none;
+        color: #fff;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #005ea6;
+    }
+
+    .btn {
+        margin-top: 5px;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div>
+            <img src="baymax2.png" id="bay">
+        </div>
+        <div class="bubble bubble-bottom-left">
+            <div id="textoDigitado"></div>
+            <div id="botoes"></div>
+        </div>
+    </div>
+
+    <script src="script11.js"></script>
+</body>
+
+</html>
